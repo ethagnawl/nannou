@@ -1,4 +1,4 @@
-# nannou [![Build Status](https://travis-ci.org/nannou-org/nannou.svg?branch=master)](https://travis-ci.org/nannou-org/nannou) [![Crates.io](https://img.shields.io/crates/v/nannou.svg)](https://crates.io/crates/nannou) [![Crates.io](https://img.shields.io/crates/l/nannou.svg)](https://github.com/nannou-org/nannou/blob/master/LICENSE-MIT) [![docs.rs](https://docs.rs/nannou/badge.svg)](https://docs.rs/nannou/) [![Backers on Open Collective](https://opencollective.com/nannou/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/nannou/sponsors/badge.svg)](#sponsors) 
+# nannou [![Build Status](https://travis-ci.org/nannou-org/nannou.svg?branch=master)](https://travis-ci.org/nannou-org/nannou) [![Crates.io](https://img.shields.io/crates/v/nannou.svg)](https://crates.io/crates/nannou) [![Crates.io](https://img.shields.io/crates/l/nannou.svg)](https://github.com/nannou-org/nannou/blob/master/LICENSE-MIT) [![docs.rs](https://docs.rs/nannou/badge.svg)](https://docs.rs/nannou/) [![Backers on Open Collective](https://opencollective.com/nannou/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/nannou/sponsors/badge.svg)](#sponsors)
 
 ![sdf](https://i.imgur.com/1ldLFfj.png)
 
@@ -65,3 +65,8 @@ at your option.
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
+
+## Pete C FFI Demo
+LIB_PATH=./examples/lib
+pushd $LIB_PATH && make && popd
+LIBRARY_PATH=$LIB_PATH cargo run --release --example simple_draw

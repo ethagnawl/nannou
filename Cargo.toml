@@ -14,6 +14,7 @@ edition = "2018"
 default = ["notosans"]
 
 [dependencies]
+libc = "^0.2"
 approx = "0.1"
 cgmath = { version = "0.16", features = ["serde"] }
 conrod_core = "0.68"

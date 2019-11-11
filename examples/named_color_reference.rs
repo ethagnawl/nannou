@@ -81,7 +81,8 @@ fn update(app: &App, model: &mut Model, _update: Update) {
 }
 
 // Draw the state of your `Model` into the given `Frame` here.
-fn view(app: &App, model: &Model, frame: &Frame) {
+fn view(app: &App, frame: &Frame) {
+    // fn view(app: &App, model: &Model, frame: &Frame) {
     let draw = app.draw();
 
     // Draw the background with the color.
